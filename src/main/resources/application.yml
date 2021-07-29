@@ -1,0 +1,33 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: 123456
+        # useSSL=false 使用SSL安全连接 characterEncoding - 使用UTF-8编码  useUnicode - 使用字符编码 serverTimezone=Asia/Shanghai 设置时区
+        url: jdbc:mysql://192.168.1.6:3306/test_mp?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+        username: root
+
+#mybatis相关配置
+mybatis-plus:
+#    扫描mapper路径
+    mapper-locations: classpath*:/mapper/*Mapper.xml
+#扫描实体类
+    type-aliases-package: com.cnion.mybatisdemo.*.entity
+    configuration:
+#        配置缓存
+        cache-enabled: false
+#开启驼峰命名
+        map-underscore-to-camel-case: true
+ #        控制台输出
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#日志级别 root表示所有包，也可以单独配置具体包 FATAL（致命），ERROR（错误），WARN（警告），INFO（信息），DEBUG（调试），TRACE（跟踪）或者 OFF（关闭）
+# 打印sql
+logging:
+    level: debug
+    level.com.counsel: debug
+#    file:
+#        path: logs/
+#        name: mpc.log
+#    path: logs/
+#    file: workOrders.log
+
+
