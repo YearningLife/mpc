@@ -229,3 +229,24 @@ public class ConfigurerAdapter implements WebMvcConfigurer {
     }
 }
 ```
+
+# 四. 拦截器获取方法名\注解名
+
+```java
+@Override
+public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, @Nullable Exception ex) throws Exception {
+    String controllerName = "";
+    String methodName = "";
+    ApiOperation annotation = null;
+    if( handler instanceof HandlerMethod) {
+        HandlerMethod handlerMethod = (HandlerMethod) handler;
+        //获取controller名称
+        controllerName = handlerMethod.getBean().getClass().getSimpleName().replace("Controller","");
+        //获取方法名
+        methodName = handlerMethod.getMethod().getName();
+		//获取注解名
+        annotation = handlerMethod.getMethod().getAnnotation(ApiOperation.class);
+
+    }
+}
+```
