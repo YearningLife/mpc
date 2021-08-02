@@ -8,7 +8,7 @@
 
 3. 在entity实体类上面添加注解
 
-   ![时间更新](.\images\image-20210720230217950.png)
+   ![时间更新](https://github.com/YearningLife/mpc/blob/master/images/image-20210720230217950.png)
 
 时间格式是这样的:
 
@@ -35,7 +35,7 @@ public enum FieldFill {
 
 4. 官方文档地址:  https://baomidou.com/guide/auto-fill-metainfo.html  参考这个做法
 
-   ![image-20210720230710670](.\images\image-20210720230710670.png)
+   ![image-20210720230710670](https://github.com/YearningLife/mpc/blob/master/images/image-20210720230710670.png)
 
 # 二. 使用RestTemplate 调用外部接口
 
