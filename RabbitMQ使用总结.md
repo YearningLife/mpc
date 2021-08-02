@@ -104,13 +104,13 @@ EOF
 
    在[dockerhub官网][https://hub.docker.com/_/rabbitmq] 注意到,一条信息:
 
-   ![报错信息](.\images\image-20210801174940003.png)
+   ![报错信息](https://github.com/YearningLife/mpc/blob/master/images/image-20210801174940003.png)
 
 点击[配置文件链接](https://www.rabbitmq.com/configure.html) 可以看到:
 
-![命令框](.\images\image-20210801175225012.png)
+![命令框](https://github.com/YearningLife/mpc/blob/master/images/image-20210801175225012.png)
 
-![查看命令](.\images\image-20210801180556637.png)
+![查看命令](https://github.com/YearningLife/mpc/blob/master/images/image-20210801180556637.png)
 
 进入到这个页面:
 
@@ -118,9 +118,9 @@ EOF
 
 
 
-![image-20210801180826190](.\images\image-20210801180826190.png)
+![image-20210801180826190](https://github.com/YearningLife/mpc/blob/master/images/image-20210801180826190.png)
 
-3. 问题解决,正确做法:
+3. ### 问题解决,正确做法:
 
    ```
    #部署
